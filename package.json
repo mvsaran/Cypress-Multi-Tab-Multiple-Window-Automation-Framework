@@ -1,0 +1,34 @@
+{
+  "name": "cypress-multitab-demo",
+  "version": "1.0.0",
+  "description": "Comprehensive Cypress Multi-Tab, Multiple Windows, Popup Handling, and Cross-Tab Automation Demo Framework",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "node run-cypress.js open --browser chrome",
+    "cy:run": "node run-cypress.js run --browser chrome",
+    "cy:chrome": "node run-cypress.js run --browser chrome",
+    "cy:electron": "node run-cypress.js run --browser electron",
+    "test:multitab": "node run-cypress.js run --browser chrome --spec \"cypress/e2e/*.cy.js\"",
+    "test:01": "node run-cypress.js run --browser chrome --spec \"cypress/e2e/01-new-tab-basic.cy.js\"",
+    "test:02": "node run-cypress.js run --browser chrome --spec \"cypress/e2e/02-new-tab-puppeteer.cy.js\"",
+    "test:03": "node run-cypress.js run --browser chrome --spec \"cypress/e2e/03-replace-window.cy.js\"",
+    "test:04": "node run-cypress.js run --browser chrome --spec \"cypress/e2e/04-new-window.cy.js\"",
+    "test:05": "node run-cypress.js run --browser chrome --spec \"cypress/e2e/05-multiple-tabs.cy.js\""
+  },
+  "keywords": [
+    "cypress",
+    "puppeteer",
+    "@cypress/puppeteer",
+    "multi-tab",
+    "multiple-windows",
+    "popup-handling",
+    "sdet-interview",
+    "automation-framework"
+  ],
+  "author": "Senior SDET & Cypress Automation Architect",
+  "license": "MIT",
+  "devDependencies": {
+    "@cypress/puppeteer": "^1.0.0",
+    "cypress": "^14.1.0"
+  }
+}
